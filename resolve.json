@@ -1,0 +1,27 @@
+[
+    {
+        "name": "waf-tools",
+        "resolver": "git",
+        "method": "semver",
+        "major": 4,
+        "sources": [
+            "github.com/steinwurf/waf-tools.git"
+        ]
+    },
+    {
+        "name": "served-source",
+        "resolver": "git",
+        "method": "checkout",
+        "checkout": "6288e52c79c9ce72fe3dfadde1e0023b907acb3e",
+        "sources": ["git@github.com:steinwurf/served-source.git"]
+    },
+    {
+        "name": "boost",
+        "resolver": "git",
+        "method": "semver",
+        "major": 3,
+        "sources": [
+            "github.com/steinwurf/boost.git"
+        ]
+    }
+]
