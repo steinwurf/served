@@ -10,8 +10,8 @@ project_name = 'served'
 
 def run_command(args):
     print("Running: {}".format(args))
-    # sys.stdout.flush()
-    # subprocess.check_call(args)
+    sys.stdout.flush()
+    subprocess.check_call(args)
 
 
 def get_tool_options(properties):
