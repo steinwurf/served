@@ -12,7 +12,7 @@
         "name": "served-source",
         "resolver": "git",
         "method": "checkout",
-        "checkout": "b6efb4f",
+        "checkout": "0271136",
         "sources": ["git@github.com:steinwurf/served-source.git"]
     },
     {
