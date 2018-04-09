@@ -13,6 +13,7 @@
         "resolver": "git",
         "method": "checkout",
         "checkout": "0271136",
+        "pull_submodules": false,
         "sources": ["git@github.com:steinwurf/served-source.git"]
     },
     {
