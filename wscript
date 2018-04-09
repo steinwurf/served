@@ -71,7 +71,7 @@ def build(bld):
         bld.program(
             features='cxx',
             source=[served_path.find_node('src/examples/handlers/main.cpp')],
-            target='form_data',
+            target='handlers',
             use=['served'])
 
         bld.program(
