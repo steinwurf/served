@@ -12,7 +12,7 @@
         "name": "served-source",
         "resolver": "git",
         "method": "checkout",
-        "checkout": "361428f",
+        "checkout": "d5a3068",
         "pull_submodules": false,
         "sources": ["git@github.com:steinwurf/served-source.git"]
     },
