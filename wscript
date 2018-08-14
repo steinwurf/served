@@ -12,15 +12,13 @@ def configure(conf):
     if conf.is_mkspec_platform('linux') and not conf.env['LIB_PTHREAD']:
         conf.check_cxx(lib='pthread')
 
-    # conf.check_cxx(lib='re2')
-
 
 def build(bld):
     bld.env.append_unique(
         'DEFINES_STEINWURF_VERSION',
         'STEINWURF_SERVED_VERSION="{}"'.format(VERSION))
 
-    use_flags = ["boost_system"]#, "RE2"]
+    use_flags = ["boost_system"]
     if bld.is_mkspec_platform('linux'):
         use_flags += ['PTHREAD']
 
@@ -73,7 +71,7 @@ def build(bld):
         bld.program(
             features='cxx',
             source=[served_path.find_node('src/examples/handlers/main.cpp')],
-            target='form_data',
+            target='handlers',
             use=['served'])
 
         bld.program(

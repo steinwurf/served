@@ -12,7 +12,8 @@
         "name": "served-source",
         "resolver": "git",
         "method": "checkout",
-        "checkout": "6288e52c79c9ce72fe3dfadde1e0023b907acb3e",
+        "checkout": "change-enum-style-to-prevent-name-clashes",
+        "pull_submodules": false,
         "sources": ["git@github.com:steinwurf/served-source.git"]
     },
     {
